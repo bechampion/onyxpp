@@ -3,7 +3,7 @@
 
 ## Instructions
 
- *Runs on ubuntu 14.04
- *clone adn run prep.sh
+* Nested bullet
+* Sub-nested bullet etc
 
 
