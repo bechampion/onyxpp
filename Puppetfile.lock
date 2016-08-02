@@ -1,0 +1,16 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    example42-git (2.0.20)
+      example42-puppi (>= 2.0.0)
+    example42-puppi (2.2.1)
+    golja-gnupg (1.2.3)
+    maestrodev-rvm (1.13.1)
+      golja-gnupg (>= 1.2.0)
+      puppetlabs-stdlib (>= 4.2.0)
+    puppetlabs-stdlib (4.12.0)
+
+DEPENDENCIES
+  example42-git (>= 0)
+  maestrodev-rvm (>= 0)
+
