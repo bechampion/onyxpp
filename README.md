@@ -3,7 +3,8 @@
 
 ## Instructions
 
-* Nested bullet
-* Sub-nested bullet etc
+* Runs on ubuntu 14.04
+* Run prep.sh
+* rails server from project::path ( see hieradata/common.yaml )
 
 
