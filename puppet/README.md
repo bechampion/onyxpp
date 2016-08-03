@@ -3,9 +3,10 @@
 
 ## Instructions
 
-* Runs on ubuntu 14.04
-* Run prep.sh
-* Run "rails server" from project::path ( see hieradata/common.yaml )
+* Install Vagrant
+* Install VirtualBox
+* Clone this 
+* Run ```  vagrant up ```
 
 
 ## More to come.
