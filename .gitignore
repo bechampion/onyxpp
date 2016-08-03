@@ -1,2 +1,4 @@
 puppet/modules/
 .vagrant/
+.librarian/
+.tmp/
