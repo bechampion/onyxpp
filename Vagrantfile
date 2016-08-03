@@ -8,6 +8,8 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "onyx.dev"
+  config.vm.synced_folder "static/", "/static/"
+
 
   config.vm.provider :virtualbox do |vb|
     vb.customize [
