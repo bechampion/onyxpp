@@ -10,6 +10,8 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "onyx.dev"
   config.vm.synced_folder "static/", "/static/"
   config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network :private_network, ip: "192.168.3.10"
+  config.hostsupdater.aliases = ["onyx", "www.onyx.dev"]
 
 
   config.vm.provider :virtualbox do |vb|
