@@ -1,0 +1,4 @@
+---
+project::name: "onyx"
+project::path: "/home/vagrant/Projects/onyx"
+project::source: "https://github.com/WestLondonCoders/onyx"

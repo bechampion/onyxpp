@@ -1,0 +1,20 @@
+{
+  "LICENSE": "a300b604c66de62cf6e923cca89c9d83",
+  "README.md": "bbc0b81682ae790f6d4d16e08570da23",
+  "Rakefile": "7749f3f800147c17f465a0e2213419d1",
+  "manifests/clone.pp": "525e6460188a1038fc97ce8e81465175",
+  "manifests/init.pp": "51db29f536a9d836dd8301e70a021e41",
+  "manifests/params.pp": "598a330a8806146fccf3e16180751d4c",
+  "manifests/reposync.pp": "77d0a052249aa813a789ea48e7333ae1",
+  "manifests/spec.pp": "9374cfe0de4ea39023b875ba84e3f863",
+  "metadata.json": "b16a4c6aac5c74878fd3109b423c0f37",
+  "spec/classes/git_spec.rb": "0d07661ca2c826a2615607d899ec5084",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "templates/reposync/git_reposync-command.erb": "03b9d54eb8119a313b55bf1ea02b5481",
+  "templates/reposync/git_reposync-cron.erb": "6f8faf269700b9b8efe8e7e7c3929a43",
+  "templates/reposync/git_reposync.erb": "b45b57fdd22bf54a1cac3fd70772fa4f",
+  "templates/spec.erb": "055d4f22a02a677753cf922108b6e50c",
+  "tests/absent.pp": "b28eb2888399275775dbf4e2240e7a8e",
+  "tests/disable.pp": "48a940fba3aa489dd7723bd3f1d7cc16",
+  "tests/init.pp": "761f0554781152ab10513484c1d65ef5"
+}
