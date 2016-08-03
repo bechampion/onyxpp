@@ -1,4 +1,4 @@
-#Some variables.
+###Some variables.
 $projectname = hiera("project::name")
 $projectpath = hiera("project::path")
 $projectsource = hiera("project::source")
@@ -10,7 +10,7 @@ if $::lsbdistdescription == "Ubuntu 14.04.5 LTS" {
 } else { 
 	fail ("This manifest is written for ubuntu 14.04")
 }	
-### installing RVM
+###Installing RVM
 class { ::rvm: gnupg_key_id => false }
 rvm_system_ruby {
   'ruby-2.3.0':
@@ -29,23 +29,23 @@ rvm_gem {
 ### Make sure git is installed
 class { 'git': noops => false }
 
-### Clone Repo
-
+###Clone Repo
 git::reposync{'onyx':
  destination_dir   => $projectpath,
  source_url => $projectsource
 }
 
-### Adding some files to the Gemfile this should be fixed somewhere else.
+###Adding some files to the Gemfile this should be fixed somewhere else.
 file_line { 'execjs': path => "${projectpath}/Gemfile" , line => "gem 'execjs'"}
 file_line { 'rubyracer': path => "${projectpath}/Gemfile" , line => "gem 'therubyracer', :platforms => :ruby"}
 
-### Exec bundle install
+###Exec bundle install
 exec { 'bundleinstall': command => 'rvm 2.3.0 do bundle install' , cwd => $projectpath  , path => ['/usr/local/rvm/bin/','/bin/','/usr/bin','/sbin','/usr/sbin'] }
 
+###Rails Server
 exec { 'running rails': command => 'rvm 2.3.0 do rails server -d -b 0.0.0.0' , cwd => $projectpath , path =>  ['/usr/local/rvm/bin/','/bin/','/usr/bin','/sbin','/usr/sbin'] } 
 
-### Main Class chain
+###Main Class chain
 Package['postgresql-server-dev-9.3'] -> 
 Class['rvm'] -> 
 Rvm_system_ruby['ruby-2.3.0'] -> 
