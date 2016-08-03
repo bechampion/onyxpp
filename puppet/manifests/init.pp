@@ -43,7 +43,7 @@ file_line { 'rubyracer': path => "${projectpath}/Gemfile" , line => "gem 'therub
 ### Exec bundle install
 exec { 'bundleinstall': command => 'rvm 2.3.0 do bundle install' , cwd => $projectpath  , path => ['/usr/local/rvm/bin/','/bin/','/usr/bin','/sbin','/usr/sbin'] }
 
-exec { 'running rails': command => 'rvm 2.3.0 do rails server -d' , cwd => $projectpath , path =>  ['/usr/local/rvm/bin/','/bin/','/usr/bin','/sbin','/usr/sbin'] } 
+exec { 'running rails': command => 'rvm 2.3.0 do rails server -d -b 0.0.0.0' , cwd => $projectpath , path =>  ['/usr/local/rvm/bin/','/bin/','/usr/bin','/sbin','/usr/sbin'] } 
 
 ### Main Class chain
 Package['postgresql-server-dev-9.3'] -> 
