@@ -1,5 +1,5 @@
 
-## Little manifest for onyx @ [West London Coders](http://www.meetup.com/West-London-Coders/)
+## Vagrant/Puppet setup for Onyx @ [West London Coders](http://www.meetup.com/West-London-Coders/)
 
 ## Instructions
 
