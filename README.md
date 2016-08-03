@@ -7,7 +7,7 @@
 * Install Vagrant Host Updater ```vagrant plugin install vagrant-hostsupdater```
 * Install VirtualBox [VirtualBox Site](https://www.virtualbox.org)
 * Clone this repo ^^
-* Run ```  vagrant up ```
+* Run ```  vagrant up ``` ( it will ask you for your sudo password at some point ) 
 * Browse ```http://onyx-dev:3000```
 
 
